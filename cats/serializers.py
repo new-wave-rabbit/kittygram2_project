@@ -26,7 +26,7 @@ class AchievementSerializer(serializers.ModelSerializer):
 class CatSerializer(serializers.ModelSerializer):
     achievements = AchievementSerializer(many=True, required=False)
     color = serializers.ChoiceField(choices=CHOICES)
-    owner = serializers.PrimaryKeyRelatedField(read_only=True)
+    owner = serializers.HiddenField(default=serializers.CurrentUserDefault())
     age = serializers.SerializerMethodField()
     
     class Meta:
