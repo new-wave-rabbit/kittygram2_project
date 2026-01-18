@@ -1,7 +1,7 @@
 ###
 POST http://127.0.0.1:8000/cats/ HTTP/1.1
 content-type: application/json
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
     "name": "whitecat",
@@ -16,48 +16,36 @@ Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
 
 ###
 GET http://127.0.0.1:8000/cats/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODI1OTU2LCJpYXQiOjE3Njg3Mzk1NTYsImp0aSI6IjE2ZTM4MzgyNGM1MTRlZGZhYmYyN2ExZTJiZDZlNDBmIiwidXNlcl9pZCI6IjIifQ.VXa5eK3AXF4d3sg4GiaxZHQTiYk6guCre7O4pfIN_vI
-
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 ###
 GET http://127.0.0.1:8000/cats/recent-white-cats/
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 ###
 GET http://127.0.0.1:8000/mycats/3
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 ###
 GET http://127.0.0.1:8000/cats
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 
 
 ###
 PATCH http://127.0.0.1:8000/cats/1/ HTTP/1.1
 content-type: application/json
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
     "name": "blackcat1",
     "color": "#228B22",
     "birth_year": 2009
 }
-###
-GET http://127.0.0.1:8000/owners/
-###
-POST http://127.0.0.1:8000/owners/ HTTP/1.1
-content-type: application/json
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
-
-{
-    "first_name": "Иван",
-    "last_name": "Иванов"
-}
 
 ### 
 POST http://127.0.0.1:8000/cats/ HTTP/1.1
 content-type: application/json
-Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 
 {
@@ -66,25 +54,17 @@ Authorization: Token fe5fcd7eef899564ef3c6a74b7f5f855bc74f5b2
     "birth_year": 2017,
     "owner": 1,
     "achievements": [
-        {"name": "поймал мышку"},
-        {"name": "разбил вазу"}
+        {"achievement_name": "поймал мышку"},
+        {"achievement_name": "разбил вазу"}
     ]
 } 
 
-
-{
-    "text": "Текст для моего поста",
-    "author": 1,
-    "tag": [
-        {"name": "хобби"},
-        {"name": "личное"}
-        ]
-} 
 
 
 ### 
 POST http://127.0.0.1:8000/api-token-auth/ HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
     "username": "idotsenko",
@@ -94,6 +74,7 @@ content-type: application/json
 ### 
 POST http://127.0.0.1:8000/auth/users/ HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
     "username": "test",
@@ -102,9 +83,14 @@ content-type: application/json
 ### 
 POST http://127.0.0.1:8000/auth/jwt/create/ HTTP/1.1
 content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
     "username": "test",
     "password": "testtest1234"
 }
 
+# {
+#   "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2ODgzMjMxMCwiaWF0IjoxNzY4NzQ1OTEwLCJqdGkiOiJiYTU1OWFlY2RhYzI0NDY5YWY3NDQzZTk5NjEzMTI4YSIsInVzZXJfaWQiOjF9.0U1DWL7xld7SlwUEV_EJKs43tNmR3_ZW5XCrg04dz5I",
+#   "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994"
+# }
