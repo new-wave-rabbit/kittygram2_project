@@ -4,9 +4,9 @@ content-type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODMyMzEwLCJpYXQiOjE3Njg3NDU5MTAsImp0aSI6IjZmZjFkZjE3MjgxYjRkZTA4ODg2MGE2ODU0M2YyNjhhIiwidXNlcl9pZCI6MX0.efYDlGtRDeObC7-WB1bxNqtfCl1t7y0sNIdrSeWP994
 
 {
-    "name": "whitecat",
+    "name": "oldcat",
     "color": "White",
-    "birth_year": 2009,
+    "birth_year": 1989,
     "owner": 1,
     "achievements": [
         {"achievement_name": "поймал мышку"}

@@ -35,6 +35,14 @@ class CatSerializer(serializers.ModelSerializer):
                   'age')
         read_only_fields = ('owner',)
 
+    def validate_birth_year(self, value):
+        year = dt.date.today().year
+        if not (year - 40 < value <= year):
+            raise serializers.ValidationError('Проверьте год рождения!')
+        return value 
+
+
+
     def get_age(self, obj):
         return dt.datetime.now().year - obj.birth_year
 
