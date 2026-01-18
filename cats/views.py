@@ -12,6 +12,10 @@ class CatViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user) 
 
+# При подобных операциях с PUT- и PATCH-запросами следует переопределить метод perform_update(),
+#  а в остальном всё работает так же.
+
+
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
